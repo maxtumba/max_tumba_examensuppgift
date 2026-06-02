@@ -1,0 +1,17 @@
+.key{
+    /* Rör inte */
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template:repeat(7,1fr)/repeat(7,1fr);
+background-origin: border-box; 
+   background-size: cover;
+}
+
+
+.esc{
+    grid-column: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    /* Skriv nedan */
+}
