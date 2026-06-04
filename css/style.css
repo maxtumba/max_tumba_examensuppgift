@@ -37,3 +37,9 @@ font-size: 1.5rem;
     height: 2rem;
     background: grey;
 }
+.key{
+    padding: 1rem;
+}
+.key:active{
+    background:white;
+}
