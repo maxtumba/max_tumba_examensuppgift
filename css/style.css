@@ -1,17 +1,39 @@
-.key{
-    /* Rör inte */
-    display: grid;
-    width: 500px;
-    height: 500px;
-    grid-template:repeat(7,1fr)/repeat(7,1fr);
-background-origin: border-box; 
-   background-size: cover;
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+height: 100vh;
+background: white;
+font-size: 1.5rem;
+
 }
-
-
-.esc{
-    grid-column: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    /* Skriv nedan */
+.textContainer{
+    width: 90vw;
+    height: 20vh;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 2px rgb(78, 78, 78);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-family: sans-serif;
+    outline: none;
+}
+.keyboard{
+   height: 50vh;
+   width: 70vw;
+   background: darkgrey;
+   border-radius: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.space{
+    width: 50%;
+    height: 2rem;
+    background: grey;
 }
