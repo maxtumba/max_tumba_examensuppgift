@@ -8,38 +8,72 @@ background: white;
 font-size: 1.5rem;
 
 }
-.textContainer{
-    width: 90vw;
-    height: 20vh;
-    background: rgb(255, 255, 255);
-    box-shadow: 0 0 20px 2px rgb(78, 78, 78);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    font-family: sans-serif;
-    outline: none;
-}
+
 .keyboard{
-   height: 50vh;
-   width: 70vw;
+   height: auto;
+   margin: auto;
+   width: 90vw;
    background: darkgrey;
    border-radius: 1rem;
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
+   padding: 10px;
 }
 .row{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 6px;
 }
 .space{
-    width: 50%;
-    height: 2rem;
+    flex: 3;
+    height: 40px;
     background: grey;
 }
 .key{
-    padding: 1rem;
+    width: 35px;
+    height: 35px;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(75, 75, 75);
 }
 .key:active{
-    background:white;
+    background-color: red;
+    color: yellow;
+    transform: scale(0.95);
+}
+.backspace{
+    width: 100px;
+}
+.enter{
+    width: 80px;
+}
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.arrow-key{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(2, 50px);
+    gap: 5px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+.arrow-key .key{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.small {
+    font-size: 0.8rem;
 }
