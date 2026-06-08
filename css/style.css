@@ -5,7 +5,7 @@ align-items: center;
 justify-content: space-evenly;
 height: 100vh;
 background: white;
-font-size: 1.5rem;
+font-size: 0.7rem;
 
 }
 
@@ -27,7 +27,7 @@ font-size: 1.5rem;
     gap: 6px;
 }
 .space{
-    flex: 3;
+    flex: 2;
     height: 40px;
     background: grey;
 }
@@ -39,8 +39,9 @@ font-size: 1.5rem;
     border-radius: 4px;
     color: white;
     background-color: rgb(75, 75, 75);
+    transition: background-color 0.15s, ease, transform 0.05s ease;
 }
-.key:active{
+.key.active{
     background-color: red;
     color: yellow;
     transform: scale(0.95);
